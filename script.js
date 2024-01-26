@@ -68,7 +68,10 @@ document.addEventListener("keydown", function (event) {
     var elementId = getKeyElementId(code);
 
     if (elementId) {
-        document.getElementById(elementId).style.backgroundColor = "rgba(0, 160, 208, 0.61)";
+        document.getElementById(elementId).style.backgroundColor = "rgba(39, 245, 234, 0.6)";
+        document.getElementById(elementId).style.boxShadow = "none";
+        document.getElementById(elementId).style.transform = "translateY(2.5px)";
+
         event.preventDefault();
     }
 });
@@ -79,6 +82,8 @@ document.addEventListener("keyup", function (event) {
 
     if (elementId) {
         document.getElementById(elementId).style.backgroundColor = "";
+        document.getElementById(elementId).style.boxShadow = "0px 1.5px 1px lime";
+        document.getElementById(elementId).style.transform = "translateY(0px)";
         event.preventDefault();
     }
 });
