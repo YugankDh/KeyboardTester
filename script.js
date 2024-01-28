@@ -69,8 +69,8 @@ document.addEventListener("keydown", function (event) {
 
     if (elementId) {
         document.getElementById(elementId).style.backgroundColor = "rgba(39, 245, 234, 0.6)";
-        document.getElementById(elementId).style.boxShadow = "none";
-        document.getElementById(elementId).style.transform = "translateY(2.5px)";
+        // document.getElementById(elementId).style.backgroundColor = "rgb(196, 196, 196)"
+        document.getElementById(elementId).style.transform = "translateY(2px)";
 
         event.preventDefault();
     }
@@ -81,8 +81,8 @@ document.addEventListener("keyup", function (event) {
     var elementId = getKeyElementId(code);
 
     if (elementId) {
-        document.getElementById(elementId).style.backgroundColor = "";
-        document.getElementById(elementId).style.boxShadow = "0px 1.5px 1px lime";
+        document.getElementById(elementId).style.backgroundColor = "rgb(196, 196, 196)";
+        document.getElementById(elementId).style.color = "black"
         document.getElementById(elementId).style.transform = "translateY(0px)";
         event.preventDefault();
     }
